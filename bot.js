@@ -36,16 +36,37 @@ function onMessageHandler (target, context, msg, self) {
     const num = rollDice();
     client.say(target, `You rolled a ${num}`);
     console.log(`* Executed ${commandName} command`);
-  } else {
-    console.log(`* Unknown command ${commandName}`);
+  } 
+  // HYPE Command
+  if (commandName === '!hype') {
+    client.say(target, "renais9Hype renais9Hype renais9Hype renais9Hype renais9Hype HYPE IN CHAT!!! renais9Hype renais9Hype renais9Hype renais9Hype renais9Hype renais9Hype renais9Hype renais9Hype renais9Hype renais9Hype HYPE IN CHAT!!! renais9Hype renais9Hype renais9Hype renais9Hype renais9Hype renais9Hype renais9Hype");
+    console.log(`* Executed ${commandName} command`);
+  } 
+
+  // BREAK Command
+  if (commandName === '!break') {
+    client.say(target, "Everyone get up and stretch, hydrate, and any other relief you need! peepoPooPoo");
+    console.log(`* Executed ${commandName} command`);
+  }
+
+  // RAID Command
+  if (commandName === '!raid') {
+    client.say(target, ":D <3 :D RENAISANI RAID :D <3 :D RENAISANI RAID :D <3 :D RENAISANI RAID :D <3 :D RENAISANI RAID :D <3 :D RENAISANI RAID :D <3 :D RENAISANI RAID");
+    console.log(`* Executed ${commandName} command`);
+  }
+
+  // CHAIR Command
+  if (commandName === '!chair') {
+    client.say(target, "imani is currently contemplating life so he'll be right back pepeMeltdown");
+    console.log(`* Executed ${commandName} command`);
   }
 
   if (commandName === 'what time is it?') {
-    client.say(target, 'ADVENTURE TIME!!!');
+    client.say(target, "ADVENTURE TIME!!!");
   }
 
   if (commandName === 'how old are you?') {
-    client.say(target, 'I am 27!');
+    client.say(target, "I am 27!");
   }
 }
 

@@ -43,6 +43,10 @@ function onMessageHandler (target, context, msg, self) {
   if (commandName === 'what time is it?') {
     client.say(target, 'ADVENTURE TIME!!!');
   }
+
+  if (commandName === 'how old are you?') {
+    client.say(target, 'I am 27!');
+  }
 }
 
 // Function called when the "dice" command is issued

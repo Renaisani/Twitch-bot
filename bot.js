@@ -1,13 +1,16 @@
 const tmi = require('tmi.js');
+require('dotenv').config();
+
+const oauthToken = process.env.OAUTH_TOKEN;
 
 // Define configuration options
 const opts = {
   identity: {
-    username: '<BOT_USERNAME>',
-    password: '<OAUTH_TOKEN>'
+    username: 'Renaisani',
+    password: oauthToken
   },
   channels: [
-    '<CHANNEL_NAME>'
+    'Renaisani'
   ]
 };
 
@@ -35,6 +38,10 @@ function onMessageHandler (target, context, msg, self) {
     console.log(`* Executed ${commandName} command`);
   } else {
     console.log(`* Unknown command ${commandName}`);
+  }
+
+  if (commandName === 'what time is it?') {
+    client.say(target, 'ADVENTURE TIME!!!');
   }
 }
 
